@@ -1,0 +1,30 @@
+{
+  "name": "twitter-api-utils",
+  "version": "0.0.1",
+  "description": "Collection of methods for working with the Twitter api. Developed for my own use.",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trolleymusic/twitter-api-utils.git"
+  },
+  "keywords": [
+    "twitter",
+    "api"
+  ],
+  "author": "Trolleymusic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trolleymusic/twitter-api-utils/issues"
+  },
+  "homepage": "https://github.com/Trolleymusic/twitter-api-utils#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "twitter": "^1.7.1"
+  }
+}
