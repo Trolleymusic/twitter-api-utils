@@ -36,7 +36,7 @@ class TwitterUtils {
       })
   }
 
-  getStatuses ({screenName}) {
+  getStatuses ({screenName, count = 20, excludeReplies = true}) {
     const client = new Twitter({
       'bearer_token': this.bearerToken,
       'consumer_key': this.consumerKey,
@@ -44,6 +44,8 @@ class TwitterUtils {
     })
 
     const options = {
+      'count': count,
+      'exclude_replies': excludeReplies,
       'screen_name': screenName
     }
 

@@ -39,11 +39,16 @@ From https://dev.twitter.com/oauth/reference/post/oauth2/token
 
 Call this first so that the other methods have permission to do what they need to do. This also saves the bearer token for use by other methods.
 
-#### `getStatuses({screenName})`
+#### `getStatuses({screenName, count, excludeReplies})`
 
 *Returns a Promise. Resolves to a tweets object.*
 
 Gets the statuses of the specified screen name.
+
+Optional arguments:
+
+* `count`, the number of tweets to get - default `20`
+* `excludeReplies`, get replies - counts against the `count` - default `true`
 
 From: https://dev.twitter.com/rest/reference/get/statuses/user_timeline
 
